@@ -1,0 +1,24 @@
+{
+  "port": 6000,
+  "dependsOn": [
+    "rabbitmq"
+  ],
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "dev": {
+    "command": "bun run worker",
+    "watch": [
+      "src/**/*"
+    ]
+  },
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "person-events",
+  "appType": "worker",
+  "featuresEnabled": [],
+  "name": "person-events",
+  "type": "worker",
+  "stack": "people"
+}

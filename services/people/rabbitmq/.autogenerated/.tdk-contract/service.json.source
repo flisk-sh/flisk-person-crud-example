@@ -1,0 +1,11 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "rabbitmq",
+  "appType": "bring-your-own",
+  "stack": "people",
+  "port": 4620,
+  "healthCheckPath": "/health",
+  "dockerfile": "./Dockerfile",
+  "exposeViaProxy": false
+}

@@ -1,0 +1,28 @@
+{
+  "port": 4000,
+  "dependsOn": [
+    "mongo",
+    "redis",
+    "rabbitmq"
+  ],
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "dev": {
+    "command": "bun run dev",
+    "watch": [
+      "src/**/*"
+    ]
+  },
+  "healthCheckPath": "/health",
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "person-api",
+  "appType": "backend",
+  "featuresEnabled": [],
+  "name": "person-api",
+  "type": "backend",
+  "stack": "people",
+  "framework": "express"
+}

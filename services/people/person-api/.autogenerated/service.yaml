@@ -1,0 +1,22 @@
+appName: person-api
+appType: backend
+stack: people
+port: 4000
+$schema: https://tdk-landscape.github.io/schema.service.json
+build:
+  context: .
+  dockerfile: Dockerfile
+dependsOn:
+  - mongo
+  - redis
+  - rabbitmq
+dev:
+  command: bun run dev
+  watch:
+    - src/**/*
+featuresEnabled:
+framework: express
+healthCheckPath: /health
+name: person-api
+schemaVersion: 1
+type: backend

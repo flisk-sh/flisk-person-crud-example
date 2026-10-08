@@ -1,0 +1,18 @@
+appName: person-events
+appType: worker
+stack: people
+port: 6000
+$schema: https://tdk-landscape.github.io/schema.service.json
+build:
+  context: .
+  dockerfile: Dockerfile
+dependsOn:
+  - rabbitmq
+dev:
+  command: bun run worker
+  watch:
+    - src/**/*
+featuresEnabled:
+name: person-events
+schemaVersion: 1
+type: worker

@@ -1,0 +1,6 @@
+# TDK (generated files and secrets)
+.env
+.tdk/.tdk-out/
+.tdk/.project-id
+.tdk/smoke/
+node_modules/

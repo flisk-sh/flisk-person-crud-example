@@ -1,0 +1,23 @@
+appName: person-app
+appType: frontend
+stack: people
+port: 3000
+$schema: https://tdk-landscape.github.io/schema.service.json
+build:
+  context: .
+  dockerfile: Dockerfile
+dependsOn:
+  - person-api
+dev:
+  command: bun run dev
+  watch:
+    - src/**/*
+    - public/**/*
+featuresEnabled:
+  - api-client
+  - env-config
+  - api-index
+framework: react
+name: person-app
+schemaVersion: 1
+type: frontend

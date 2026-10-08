@@ -1,0 +1,35 @@
+###############################################################################
+# SYSTEM-GENERATED - DO NOT EDIT
+# Stack feature: database-management
+# Source: .tdk/project.json phases.*.enabledStacks includes "database-management"
+# Regenerate with: tdk config regenerate
+###############################################################################
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: tdk_person_crud_example_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: tdk_person_crud_example
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: postgres
+    ports:
+      - "${TDK_BIND_ADDRESS:-127.0.0.1}:${TDK_POSTGRES_PORT:-15432}:5432"
+    volumes:
+      - tdk_person_crud_example_postgres_data:/var/lib/postgresql/data
+    networks:
+      - database
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tdk_person_crud_example -d postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+networks:
+  database:
+    name: tdk_person_crud_example_database
+    external: true
+
+volumes:
+  tdk_person_crud_example_postgres_data:
