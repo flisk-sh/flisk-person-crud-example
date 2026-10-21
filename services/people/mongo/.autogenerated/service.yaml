@@ -2,7 +2,7 @@ appName: mongo
 appType: bring-your-own
 stack: people
 port: 4600
-$schema: https://tdk-landscape.github.io/schema.service.json
+$schema: https://flisk.sh/schema.service.json
 dockerfile: ./Dockerfile
 exposeViaProxy: False
 healthCheckPath: /health

@@ -2,7 +2,7 @@ appName: redis
 appType: bring-your-own
 stack: people
 port: 4610
-$schema: https://tdk-landscape.github.io/schema.service.json
+$schema: https://flisk.sh/schema.service.json
 dockerfile: ./Dockerfile
 exposeViaProxy: False
 healthCheckPath: /health

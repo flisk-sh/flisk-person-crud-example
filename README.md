@@ -22,7 +22,7 @@ You edit each service's `service.json` and source. TDK writes the Dockerfiles, C
 
 > **Repository-pinned CLI (optional):** Run `bun install` from the repository root to install the version pinned in `package.json`. Use `bun run tdk:project` to initialize project config, `bun run tdk:dry-run` to preview startup, or `bun run tdk:up -- <stack>` to start a stack. The global npm and standalone binary installation paths remain available.
 
-Needs Docker, [Tilt](https://docs.tilt.dev/install.html) and the [TDK CLI](https://github.com/tdk-landscape/tdk-cli-core#quick-start).
+Needs Docker, [Tilt](https://docs.tilt.dev/install.html) and the [TDK CLI](https://github.com/flisk-sh/flisk#quick-start).
 
 ```bash
 bun install

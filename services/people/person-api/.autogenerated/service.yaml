@@ -2,7 +2,7 @@ appName: person-api
 appType: backend
 stack: people
 port: 4000
-$schema: https://tdk-landscape.github.io/schema.service.json
+$schema: https://flisk.sh/schema.service.json
 build:
   context: .
   dockerfile: Dockerfile
