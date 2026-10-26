@@ -90,7 +90,7 @@ function App() {
     <main style={{ maxWidth: 640, margin: '2rem auto', padding: '0 1rem', fontFamily: 'system-ui' }}>
       <h1>People</h1>
       <p style={{ color: '#666' }}>
-        React + Express + MongoDB + Redis + RabbitMQ, started with <code>tdk up people</code>.
+        React + Express + MongoDB + Redis + RabbitMQ, started with <code>flisk up people</code>.
       </p>
 
       <form onSubmit={submit} style={{ display: 'grid', gap: '0.5rem', marginBottom: '1.5rem' }}>
