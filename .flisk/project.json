@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "project": {
-    "name": "tdk-person-crud-example",
+    "name": "flisk-person-crud-example",
     "version": "1.0.0"
   },
   "phases": {

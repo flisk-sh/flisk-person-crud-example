@@ -14,7 +14,7 @@ function apiUrl(): string {
   const { protocol, host, port } = window.location;
   const apiHost = host.startsWith('app.')
     ? `api.${host.slice('app.'.length)}`
-    : `api.tdk-person-crud-example.localhost${port ? `:${port}` : ''}`;
+    : `api.flisk-person-crud-example.localhost${port ? `:${port}` : ''}`;
   return `${protocol}//${apiHost}/api/person`;
 }
 

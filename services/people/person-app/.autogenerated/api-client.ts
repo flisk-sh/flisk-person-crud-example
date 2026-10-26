@@ -14,7 +14,7 @@ import { createApiClient } from '@" + _NPM_SCOPE + "'/platform-api-client';
  * ```
  */
 export const apiClient = createApiClient({
-  baseURL: import.meta.env.VITE_API_URL || 'http://api.tdk-person-crud-example.localhost/api/people-management',
+  baseURL: import.meta.env.VITE_API_URL || 'http://api.flisk-person-crud-example.localhost/api/people-management',
   withAuth: true,
 });
 

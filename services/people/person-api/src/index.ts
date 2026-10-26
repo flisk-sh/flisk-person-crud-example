@@ -4,7 +4,7 @@ import { Redis } from 'ioredis';
 import { MongoClient, ObjectId } from 'mongodb';
 import { type Person, parsePerson } from './person';
 
-// The data services are bring-your-own containers on TDK's backend network,
+// The data services are bring-your-own containers on Flisk's backend network,
 // so they are reached by their resource name and the port in their service.json.
 const MONGO_URL = process.env.MONGO_URL ?? 'mongodb://mongo:4600';
 const REDIS_URL = process.env.REDIS_URL ?? 'redis://redis:4610';

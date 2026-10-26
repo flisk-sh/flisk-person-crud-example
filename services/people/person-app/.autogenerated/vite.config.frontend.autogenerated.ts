@@ -56,17 +56,17 @@ export default defineConfig({
     },
     proxy: {
       '': {
-        target: 'http://tdk-person-crud-example.localhost/api/people-management',
+        target: 'http://flisk-person-crud-example.localhost/api/people-management',
         changeOrigin: true,
         secure: false,
       },
       '/health': {
-        target: 'http://tdk-person-crud-example.localhost/api/people-management',
+        target: 'http://flisk-person-crud-example.localhost/api/people-management',
         changeOrigin: true,
         secure: false,
       },
       '/trpc': {
-        target: 'http://tdk-person-crud-example.localhost/api/people-management',
+        target: 'http://flisk-person-crud-example.localhost/api/people-management',
         changeOrigin: true,
         secure: false,
       },
