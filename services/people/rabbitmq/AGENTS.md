@@ -2,4 +2,4 @@
 
 DO NOT DELETE service.json
 
-This file contains the resource configuration for TDK.
+This file contains the resource configuration for Flisk.

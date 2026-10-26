@@ -1,4 +1,4 @@
-# MongoDB on port 4600: TDK's bring-your-own range is 4000-5999, and the other
+# MongoDB on port 4600: Flisk's bring-your-own range is 4000-5999, and the other
 # services reach it on the Docker network as mongo:4600.
 FROM mongo:7.0
 EXPOSE 4600
