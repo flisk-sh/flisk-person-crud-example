@@ -2,7 +2,7 @@
 // Source: engine/topologies/tilt/resources/orchestrator/generators/frontend.star
 // Purpose: Pre-configured API client for people resource
 
-import { createApiClient } from '@" + _NPM_SCOPE + "'/platform-api-client';
+import { createApiClient } from "@project/platform-api-client";
 
 /**
  * Pre-configured API client for people resource
@@ -14,8 +14,10 @@ import { createApiClient } from '@" + _NPM_SCOPE + "'/platform-api-client';
  * ```
  */
 export const apiClient = createApiClient({
-  baseURL: import.meta.env.VITE_API_URL || 'http://api.flisk-person-crud-example.localhost/api/people-management',
-  withAuth: true,
+	baseURL:
+		import.meta.env.VITE_API_URL ||
+		"http://api.flisk-person-crud-example.localhost/api/people-management",
+	withAuth: true,
 });
 
 export default apiClient;

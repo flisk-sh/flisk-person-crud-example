@@ -4,8 +4,8 @@
  * This config is used by Prisma CLI commands (generate, migrate, db push).
  */
 export default {
-  schema: 'prisma/schema.prisma',
-  datasource: {
-    url: process.env.DATABASE_URL,
-  },
+	schema: "prisma/schema.prisma",
+	datasource: {
+		url: process.env.DATABASE_URL,
+	},
 };
