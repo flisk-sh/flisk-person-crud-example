@@ -67,6 +67,10 @@ services/people/
   mongo/ redis/ rabbitmq/   bring-your-own Dockerfiles
 ```
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines and repository standards.
+
 ## License
 
 MIT
