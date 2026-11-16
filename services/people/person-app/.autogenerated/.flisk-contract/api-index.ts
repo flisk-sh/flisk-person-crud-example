@@ -2,5 +2,5 @@
 // Source: .tilt/topologies/tilt/resources/orchestrator/generators/frontend.star
 // Purpose: Clean barrel exports for API client
 
-export { apiClient } from './api-client';
-export { API_URL } from './env';
+export { apiClient } from "./api-client";
+export { API_URL } from "./env";
