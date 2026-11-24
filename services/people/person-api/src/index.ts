@@ -161,16 +161,18 @@ app.post("/persons", async (req, res) => {
 
 app.put("/persons/:id", async (req, res) => {
 	const _id = parseId(req.params.id);
+	if (!_id) {
+		res.status(404).json({ error: "person not found" });
+		return;
+	}
 	const person = parsePerson(req.body);
 	if (typeof person === "string") {
 		res.status(400).json({ error: person });
 		return;
 	}
-	const updated =
-		_id &&
-		(await persons.findOneAndReplace({ _id }, person, {
-			returnDocument: "after",
-		}));
+	const updated = await persons.findOneAndReplace({ _id }, person, {
+		returnDocument: "after",
+	});
 	if (!updated) {
 		res.status(404).json({ error: "person not found" });
 		return;
